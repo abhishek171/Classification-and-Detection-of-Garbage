@@ -11,25 +11,24 @@
        
 			<script>
             function checkPassw(form){
-				function checkPassw(form){
-				var re=/^[\w ]+$/;
-   			 if(!re.test(form.fname.value)){
+			var re=/^[\w ]+$/;
+   			if(!re.test(form.fullname.value)){
        			alert("Error: Input contains invalid characters!");
-        		form.fname.focus();
+        		form.fullname.focus();
         		return false;
-      			 }
-			  else{
-					return true;
-				}
-    		 var email=/(@.*)[.]/;
-    		 if(!email.test(form.emailid.value)){
+      		}
+			else{
+				return true;
+			}
+    		var email=/(@.*)[.]/;
+    		if(!email.test(form.emailid.value)){
         		alert("Email is invalid");
         		form.fullname.focus();
         		return false;
    			 }
-				else{
-					return true;
-				}
+			else{
+			    return true;
+			}
             if(form.passw.value.length<8){
 			alert("Password should be greater 8 charcaters long");
 			form.passw.focus();
@@ -51,16 +50,16 @@
 			alert("Enter Numbers Only");
 			form.phone.focus();
 			return false;
-      	 }
-		   else{
+      	    }
+		    else{
 			return true;
-		   }
+		    }
    
 
         }
  
  
-		</script>
+</script>
 </head>
 <body>
 <dv class="fullBackground">
