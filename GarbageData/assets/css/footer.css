@@ -1,0 +1,11 @@
+
+@media screen and (max-width: 600px) {
+
+#para{
+      text-align:center;
+  }
+  #room{
+      margin-left:30%;
+      text-align:justify;
+  }
+}

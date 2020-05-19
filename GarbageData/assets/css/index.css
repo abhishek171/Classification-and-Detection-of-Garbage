@@ -1,0 +1,132 @@
+.navbar-brand>img{
+    max-width:25px;
+    max-height:25px;
+    padding-left:5px;
+}
+
+
+.sliding{
+  margin-top: 5%;
+}
+.carousel-indicators>li{
+  background-color:black;
+}
+#image{
+  padding-left:20px;
+  padding-right:20px;
+  box-shadow:0px 2px 4px 0px rgba(0,0,0,0.2);
+  height:80%;
+  width:100%;
+
+}
+#classes{
+  display: block;
+  padding-top:5%;
+  padding-bottom:5%;
+  padding-left:10%;
+  padding-right:15%;
+ 
+  width:100%;
+
+}
+p{
+padding-top:12%;
+text-align:justify;
+}
+
+.row{
+  margin-left:12px;
+  margin-right:12px;
+} 
+  
+row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+.row > div {
+  border: none;
+}
+
+h1{
+       text-align:center;
+  }
+
+
+
+/*Counting Numbers*/
+.middle{
+  position: absolute;
+  margin-top: 15%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.counting-sec{
+  padding: 40px 0;
+  width: 100%;
+  background: linear-gradient(90deg,#3c6382,#82ccdd);
+}
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  
+}
+.col{
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+#icon{
+  font-size: 40px;
+  color: #333;
+}
+.num{
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+#row1{
+    margin-top:30%;
+}
+
+
+@media screen and (max-width: 600px) {
+
+.middle{
+ 
+  margin-top:32%;
+  
+ }
+
+ #classes{
+    margin-left:15%;
+    width:75%;
+ }
+
+p{
+    padding-top:inherit;
+    text-align:justify;
+
+}
+
+#row1{
+    margin-top:60%;
+}
+h1{
+       text-align:center;
+  }
+
+  
+#image{
+  padding-left:10px;
+  padding-right:10px;
+  height:50%;
+}
+}

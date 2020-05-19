@@ -1,0 +1,27 @@
+
+.navbar-brand>img{
+    max-width:25px;
+    max-height:25px;
+    padding-left:0;
+}
+#login,#signup{
+  float:right;
+}
+/*.navbar-expand-lg{
+width:100%;
+height:10%;
+
+}*/
+
+
+
+  @media (max-width: 700px) {
+
+    navbar-brand>img{
+        padding-left:20px;
+    }
+  
+ 
+
+  }
+
