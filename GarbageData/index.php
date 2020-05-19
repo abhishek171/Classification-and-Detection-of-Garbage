@@ -1,4 +1,15 @@
-<?php include('modules/navbar.php'); ?>
+<?php include('modules/navbar.php');
+include('assets/backendphp/connection.php');
+$plastic="select SUM(count) as plastic_count from plastic_data";
+$result=mysqli_query($conn,$plastic);
+$metal="select SUM(count) as metal_count from metal_data";
+$result1=mysqli_query($conn,$metal);
+$glass="select SUM(count) as glass_count from glass_data";
+$result2=mysqli_query($conn,$glass);
+$paper="select SUM(count) as paper_count from paper_data";
+$result3=mysqli_query($conn,$paper);
+
+ ?>
 <html>
 <head>
     <title>Home</title>
@@ -85,25 +96,37 @@
       <div class="inner-width">
         <div class="col">
         <img  src="http://localhost/GarbageData/assets/image/plastic.png" id="icon">
-          <div class="num" data-content="0">1246</div>
+          <div class="num" data-content="0"><?php
+         { while($row=mysqli_fetch_assoc($result))
+            echo " $row[plastic_count]";
+          }?> </div>
           Plastic
         </div>
 
         <div class="col">
         <img  src="http://localhost/GarbageData/assets/image/metal.png" id="icon">
-          <div class="num" data-content="0">900</div>
+          <div class="num" data-content="0"><?php
+         { while($row=mysqli_fetch_assoc($result))
+            echo " $row[metal_count]";
+          }?> </div>
           Metal
         </div>
 
         <div class="col">
         <img  src="http://localhost/GarbageData/assets/image/glass.png" id="icon">
-          <div class="num" data-content="0">687</div>
+          <div class="num" data-content="0"><?php
+         { while($row=mysqli_fetch_assoc($result))
+            echo " $row[glass_count]";
+          }?> </div>
           Glass
         </div>
 
         <div class="col">
         <img  src="http://localhost/GarbageData/assets/image/paper.png" id="icon">
-          <div class="num" data-content="0">870</div>
+          <div class="num" data-content="0"><?php
+         { while($row=mysqli_fetch_assoc($result))
+            echo " $row[paper_count]";
+          }?> </div>
           Paper
         </div>
       </div>
