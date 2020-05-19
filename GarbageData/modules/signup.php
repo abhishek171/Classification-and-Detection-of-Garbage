@@ -11,53 +11,53 @@
        
 			<script>
             function checkPassw(form){
-			var re=/^[\w ]+$/;
-   			if(!re.test(form.fullname.value)){
-       			alert("Error: Input contains invalid characters!");
-        		form.fullname.focus();
-        		return false;
-      		}
-			else{
+				var re=/^[\w ]+$/;
+				if(!re.test(form.fullname.value)){
+					alert("Error: Input contains invalid characters!");
+					form.fullname.focus();
+					return false;
+				}
+				else{
+					return true;
+				}
+				var email=/(@.*)[.]/;
+				if(!email.test(form.emailid.value)){
+					alert("Email is invalid");
+					form.fullname.focus();
+					return false;
+				}
+				else{
+					return true;
+				}
+				if(form.passw.value.length<8){
+				alert("Password should be greater 8 charcaters long");
+				form.passw.focus();
+				return false;
+				}
+				else{
 				return true;
-			}
-    		var email=/(@.*)[.]/;
-    		if(!email.test(form.emailid.value)){
-        		alert("Email is invalid");
-        		form.fullname.focus();
-        		return false;
-   			 }
-			else{
-			    return true;
-			}
-            if(form.passw.value.length<8){
-			alert("Password should be greater 8 charcaters long");
-			form.passw.focus();
-			return false;
-			}
-			else{
-			return true;
-			}
+				}
 
-            if(form.phone.value.length>10){
-			alert("Phone number should not be greater than 10");
-			form.phone.focus();
-			return false;
-			}
-			else{
-				return true;	
-			}
-			if(!form.phone.value.isInteger()){
-			alert("Enter Numbers Only");
-			form.phone.focus();
-			return false;
-      	    }
-		    else{
-			return true;
-		    }
-   
+				if(form.phone.value.length>10){
+				alert("Phone number should not be greater than 10");
+				form.phone.focus();
+				return false;
+				}
+				else{
+					return true;	
+				}
+				if(!form.phone.value.isInteger()){
+				alert("Enter Numbers Only");
+				form.phone.focus();
+				return false;
+				}
+				else{
+				return true;
+				}
+	
 
-        }
- 
+			}
+	
  
 </script>
 </head>
