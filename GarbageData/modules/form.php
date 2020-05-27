@@ -12,6 +12,7 @@ if(!isset($_SESSION['logged_in'])){
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<br><br>
 <div class="fullBackground">
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
@@ -61,7 +62,7 @@ if(!isset($_SESSION['logged_in'])){
 		</div>
 	</div>
 </div>
-</div>
+</div><br><br>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
             <script src="src/fullclip.js"></script>
              <script >

@@ -23,12 +23,15 @@ table{
   position:relative;
   top:5%;
 }
+th,td{
+  text-align:center;
+}
 </style>
 <body>
 
 <img src="http://localhost/GarbageData/assets/image/wine.jpg" class="img-fluid">Glass Data
 <br>
-<table class="table table-bordered" align="center" style="width:800px;">
+<table class="table table-bordered">
   <thead>
     <tr>
       <th scope="col">Count</th>
@@ -95,6 +98,19 @@ table{
     options: {
         scales: {
             yAxes: [{
+            scaleLabel: {
+            display: true,
+            labelString: 'Count'
+          },
+                ticks: {
+                    beginAtZero: true
+                }
+            }],
+            xAxes: [{ 
+            scaleLabel: {
+            display: true,
+            labelString: 'DateTime'
+          },
                 ticks: {
                     beginAtZero: true
                 }

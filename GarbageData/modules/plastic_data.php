@@ -22,15 +22,20 @@ img{
   padding-left:40%;
 }
 table{
-  position:relative;
+ 
   top:5%;
+}
+
+th,td{
+  text-align:center;
+}
 }
 </style>
 <body>
 
 <img src="http://localhost/GarbageData/assets/image/bottle.jpg" class="img-fluid">Plastic Data
-<br>
-<table class="table table-bordered" align="center" style="width:800px;">
+<br><br>
+<table class="table table-bordered">
   <thead>
     <tr>
       <th scope="col">Count</th>
@@ -99,6 +104,19 @@ table{
     options: {
         scales: {
             yAxes: [{
+            scaleLabel: {
+            display: true,
+            labelString: 'Count'
+          },
+                ticks: {
+                    beginAtZero: true
+                }
+            }],
+            xAxes: [{ 
+            scaleLabel: {
+            display: true,
+            labelString: 'DateTime'
+          },
                 ticks: {
                     beginAtZero: true
                 }

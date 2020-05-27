@@ -24,22 +24,18 @@ img{
 table{
   position:relative;
   top:5%;
-  bottom:5%;
-  table {
-  border-collapse: collapse;
+  
+}
+th,td{
+  text-align:center;
 }
 
-table, th, td {
-  border: 1px solid black;
-}{
-  border:1px solid black;
-}
 </style>
 <body>
 
 <img src="http://localhost/GarbageData/assets/image/crumbledpaper.jpg" class="img-fluid">Paper Data
 <br>
-<table class="table table-bordered" align="center" style="width:800px;">
+<table class="table table-bordered">
   <thead>
     <tr>
       <th scope="col">Count</th>
@@ -106,6 +102,19 @@ table, th, td {
     options: {
         scales: {
             yAxes: [{
+            scaleLabel: {
+            display: true,
+            labelString: 'Count'
+          },
+                ticks: {
+                    beginAtZero: true
+                }
+            }],
+            xAxes: [{ 
+            scaleLabel: {
+            display: true,
+            labelString: 'DateTime'
+          },
                 ticks: {
                     beginAtZero: true
                 }
