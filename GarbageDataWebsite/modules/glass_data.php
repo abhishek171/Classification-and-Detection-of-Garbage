@@ -36,7 +36,7 @@ th,td{
     <tr>
       <th scope="col">Count</th>
       <th scope="col">Day</th>
-      <th scope="col">DateTime</th>
+      <th scope="col">Date</th>
     </tr>
   </thead>
   <tbody>
@@ -47,7 +47,7 @@ th,td{
          echo "<tr>";
          echo "<td>$row[count]</td>";
          echo "<td>$row[day]</td>";
-         echo "<td>$row[datetime]</td>";
+         echo "<td>$row[date]</td>";
          echo "</tr>";
          $data[] = $row;
        }
@@ -64,7 +64,7 @@ th,td{
      let labels = [];
     <?php
        foreach($data as $row) {
-         echo "labels.push('$row[datetime]');";
+         echo "labels.push('$row[date]');";
        }
     ?>
    
@@ -100,7 +100,7 @@ th,td{
             yAxes: [{
             scaleLabel: {
             display: true,
-            labelString: 'Count'
+            labelString: 'Count of glass collected per day'
           },
                 ticks: {
                     beginAtZero: true
@@ -109,7 +109,7 @@ th,td{
             xAxes: [{ 
             scaleLabel: {
             display: true,
-            labelString: 'DateTime'
+            labelString: 'Date'
           },
                 ticks: {
                     beginAtZero: true
