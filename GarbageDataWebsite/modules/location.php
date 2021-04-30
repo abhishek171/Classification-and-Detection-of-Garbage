@@ -16,7 +16,7 @@
 
 </head>
 <body>
-  <iframe src="https://www.google.com/maps/d/embed?mid=1WDv2OvRpxWvT4ApI2gPcKiDrHtXaxZuU" width="100%" height="550"></iframe>
+  <iframe src="api-key" width="100%" height="550"></iframe>
     <div class="footer" style="position:relative ; width:100%"><?php require('footer.php'); ?></div>
 </body>
 </html>
